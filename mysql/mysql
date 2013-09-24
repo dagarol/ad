@@ -1,0 +1,7 @@
+select a.id, a.nombre, c.nombre as categoria
+from articulo a inner join categoria c on a.categoria=c.id
+
+select a.id, a.nombre, c.nombre categoria
+from articulo a inner join categoria c on a.categoria=c.id
+
+select * from categoria where id in(select categoria from articulo)
