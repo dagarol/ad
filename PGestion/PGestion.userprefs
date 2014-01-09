@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PVenta/ArticuloListView.cs">
+    <Files>
+      <File FileName="PVenta/Main.cs" Line="4" Column="30" />
+      <File FileName="PVenta/MainWindow.cs" Line="22" Column="3" />
+      <File FileName="PVenta/CategoriaListView.cs" Line="12" Column="4" />
+      <File FileName="PVenta/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="PVenta/ArticuloListView.cs" Line="43" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Pgestion" expanded="True">
+            <Node name="UserInterface" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
