@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PUiManager", "PUiManager\PUiManager.csproj", "{B54B0E55-7BC2-4793-AEC7-E7143D2016CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B54B0E55-7BC2-4793-AEC7-E7143D2016CC}.Debug|x86.ActiveCfg = Debug|x86
+		{B54B0E55-7BC2-4793-AEC7-E7143D2016CC}.Debug|x86.Build.0 = Debug|x86
+		{B54B0E55-7BC2-4793-AEC7-E7143D2016CC}.Release|x86.ActiveCfg = Release|x86
+		{B54B0E55-7BC2-4793-AEC7-E7143D2016CC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PUiManager\PUiManager.csproj
+	EndGlobalSection
+EndGlobal
