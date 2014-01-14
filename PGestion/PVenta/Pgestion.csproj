@@ -79,6 +79,10 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="CategoriaListView.cs" />
     <Compile Include="ArticuloListView.cs" />
+    <Compile Include="BotonAdd.cs" />
+    <Compile Include="gtk-gui\Serpis.Ad.BotonAdd.cs" />
+    <Compile Include="BotonDelete.cs" />
+    <Compile Include="gtk-gui\Serpis.Ad.BotonDelete.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
