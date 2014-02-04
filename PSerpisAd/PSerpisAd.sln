@@ -1,18 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSerpisAd", "PSerpisAd\PSerpisAd.csproj", "{07525C9B-932A-4605-B8B4-89A7E09D7763}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSerpisAd", "PSerpisAd\PSerpisAd.csproj", "{4BED7C5C-9A6F-4851-BCD3-9504820FD60A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSerpisAdTests", "PSerpisAdTests\PSerpisAdTests.csproj", "{13F5E17D-70E4-4FB3-A2E3-E0F21F73A3A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Default|Any CPU = Default|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{07525C9B-932A-4605-B8B4-89A7E09D7763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07525C9B-932A-4605-B8B4-89A7E09D7763}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07525C9B-932A-4605-B8B4-89A7E09D7763}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07525C9B-932A-4605-B8B4-89A7E09D7763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F5E17D-70E4-4FB3-A2E3-E0F21F73A3A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F5E17D-70E4-4FB3-A2E3-E0F21F73A3A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F5E17D-70E4-4FB3-A2E3-E0F21F73A3A3}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F5E17D-70E4-4FB3-A2E3-E0F21F73A3A3}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{13F5E17D-70E4-4FB3-A2E3-E0F21F73A3A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F5E17D-70E4-4FB3-A2E3-E0F21F73A3A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BED7C5C-9A6F-4851-BCD3-9504820FD60A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BED7C5C-9A6F-4851-BCD3-9504820FD60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BED7C5C-9A6F-4851-BCD3-9504820FD60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BED7C5C-9A6F-4851-BCD3-9504820FD60A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = PSerpisAd\PSerpisAd.csproj
