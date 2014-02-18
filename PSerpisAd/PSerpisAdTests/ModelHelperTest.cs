@@ -51,6 +51,22 @@ namespace Serpis.Ad
 			expected = "update modelhelperbar set nombre=@nombre, precio=@precio where id=@id";
 			Assert.AreEqual (expected, updateText);
 		}
+		
+		[Test()]
+		public void GetInsert ()
+		{
+			string insertText;
+			string expected ;
+			
+			insertText = ModelHelper.GetInsert (typeof(ModelHelperFoo));
+			expected = "insert into modelhelperfoo set id=@id, nombre=@nombre";
+			Assert.AreEqual (expected, insertText);
+			
+			insertText = ModelHelper.GetInsert (typeof(ModelHelperBar));
+			expected = "insert into modelhelperbar set id=@id, nombre=@nombre, precio=@precio";
+			Assert.AreEqual (expected, insertText);
+		}
+		
 	}
 }
 
