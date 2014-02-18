@@ -10,20 +10,18 @@ namespace Serpis.Ad
 	{
 		public static string GetSelect(Type type)
 		{
-			string keyName;
+			string keyName = null;
 			List<string> fieldNames = new List<string>();
 			foreach (PropertyInfo propertyInfo in type.GetProperties ()){
-				if (propertyInfo.IsDefined (typeof(keyAttribute), true))
-					keyName = propertyInfo.Name;
+				if (propertyInfo.IsDefined (typeof(KeyAttribute), true))
+					keyName = propertyInfo.Name.ToLower();
 				else if(propertyInfo.IsDefined (typeof(FieldAttribute), true))
-					fieldNames.Add (propertyInfo.Name);
+					fieldNames.Add (propertyInfo.Name.ToLower());
 				
 				
 			}
 			string tableName = type.Name.ToLower();
-			return string.Format ("select{0} from {1} where {2} = ",
-			                      string.Join(", ", fieldNames),
-			                      tableName, keyName);
+			return string.Format ("select {0} from {1} where {2}=",string.Join(", ", fieldNames),tableName, keyName);
 		}
 		
 		public static object Load(Type type, string id)
@@ -108,8 +106,8 @@ namespace Serpis.Ad
            
             string tableName = type.Name.ToLower();
            
-            return string.Format ("update {1} set {0} where {2}",
-                                  string.Join(", ", fieldParameters), tableName, keyParameter);
+            return string.Format ("update {0} set {1} where {2}",
+                                  tableName, string.Join(", ", fieldParameters), keyParameter);
         }
        
         public static string GetInsert(Type type)

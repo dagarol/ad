@@ -29,12 +29,27 @@ namespace Serpis.Ad
 			string expected ;
 			
 			selectText = ModelHelper.GetSelect (typeof(ModelHelperFoo));
-			expected = "select nombre from ModelHelperFoo where id=";
+			expected = "select nombre from modelhelperfoo where id=";
 			Assert.AreEqual (expected, selectText);
 			
 			selectText = ModelHelper.GetSelect (typeof(ModelHelperBar));
-			expected = "select nombre from ModelHelperBar where id=";
+			expected = "select nombre, precio from modelhelperbar where id=";
 			Assert.AreEqual (expected, selectText);
+		}
+		
+		[Test()]
+		public void GetUpdate ()
+		{
+			string updateText;
+			string expected ;
+			
+			updateText = ModelHelper.GetUpdate (typeof(ModelHelperFoo));
+			expected = "update modelhelperfoo set nombre=@nombre where id=@id";
+			Assert.AreEqual (expected, updateText);
+			
+			updateText = ModelHelper.GetUpdate (typeof(ModelHelperBar));
+			expected = "update modelhelperbar set nombre=@nombre, precio=@precio where id=@id";
+			Assert.AreEqual (expected, updateText);
 		}
 	}
 }
